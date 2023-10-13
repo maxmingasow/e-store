@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: gray !important;
+}
+.swiper-button-prev::after {
+  transform: translateX(100%) !important;
+}
+.swiper-button-next::after {
+  transform: translateX(-100%) !important;
+}
