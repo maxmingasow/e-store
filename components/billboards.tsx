@@ -25,7 +25,7 @@ export default function Billboards({ items, categories }: Props) {
       {items.map((billboard) => (
         <div
           key={billboard.id}
-          className="relative mx-auto my-12 h-[60vh] w-full max-w-[120rem] overflow-hidden rounded-2xl"
+          className="relative mx-auto my-12 h-screen w-full max-w-[120rem] overflow-hidden md:h-[60vh] lg:rounded-2xl"
         >
           <Image
             src={billboard.imageUrl}
