@@ -16,7 +16,7 @@ export default async function Home() {
     <main className="space-y-10 pb-10">
       <Billboards items={billboards} categories={categories} />
       <Container>
-        <div className="px-4 py-10">
+        <div className="py-10 md:px-4">
           <ProductList title="Featured Products" items={products} />
         </div>
       </Container>

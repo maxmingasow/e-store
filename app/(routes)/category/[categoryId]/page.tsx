@@ -38,9 +38,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const billboard = billboards.find((billboard) => billboard.id === category.billboardId)
 
   return (
-    <div className="bg-background px-4">
+    <div className="bg-background ">
       <Container>
-        <div className="relative mx-auto my-12 h-96 w-full max-w-[120rem] overflow-hidden rounded-2xl">
+        <div className="relative mx-auto my-12 h-96 w-full overflow-hidden lg:rounded-2xl">
           {billboard && (
             <Image
               src={billboard.imageUrl}
@@ -52,7 +52,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
             />
           )}
           <div className="absolute w-full">
-            <div className="item-center mx-auto mt-20 flex max-w-max flex-col bg-primary/40 px-12 py-8 text-center ">
+            <div className="item-center mx-auto mt-20 flex max-w-max flex-col bg-primary/40 px-4 py-8 text-center md:px-12 ">
               <h2 className="mb-6 max-w-lg text-3xl font-bold tracking-tight text-primary-foreground drop-shadow-xl md:max-w-2xl  md:text-5xl">
                 {billboard?.label}
               </h2>

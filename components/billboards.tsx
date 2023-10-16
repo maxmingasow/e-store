@@ -25,7 +25,7 @@ export default function Billboards({ items, categories }: Props) {
       {items.map((billboard) => (
         <div
           key={billboard.id}
-          className="relative mx-auto my-12 h-screen w-full max-w-[120rem] overflow-hidden md:h-[60vh] lg:rounded-2xl"
+          className="relative mx-auto my-12 h-96 w-full max-w-[120rem] overflow-hidden sm:h-[60vh] md:h-[60vh] lg:rounded-2xl"
         >
           <Image
             src={billboard.imageUrl}
@@ -36,7 +36,7 @@ export default function Billboards({ items, categories }: Props) {
             priority
           />
           <div className="absolute w-full">
-            <div className="mx-auto mt-20 flex max-w-max flex-col items-center bg-primary/40 px-12 py-8 text-center ">
+            <div className="mx-auto mt-20 flex max-w-max flex-col items-center bg-primary/40 py-8 text-center md:px-12 ">
               <h2 className="mb-6 max-w-lg text-3xl font-bold tracking-tight text-primary-foreground drop-shadow-xl md:max-w-2xl  md:text-5xl">
                 {billboard.label}
               </h2>

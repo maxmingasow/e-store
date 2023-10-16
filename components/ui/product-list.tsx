@@ -17,7 +17,7 @@ type Props = {
 export default function ProductsList({ title, items }: Props) {
   return (
     <div className="space-y-5">
-      <h3 className="text-3xl">{title}</h3>
+      <h3 className="text-center text-3xl md:text-left">{title}</h3>
       {items.length === 0 && <NoResults />}
       <Swiper
         modules={[Navigation]}
