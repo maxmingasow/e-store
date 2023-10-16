@@ -10,13 +10,13 @@ export default async function NavBar() {
   return (
     <div className="border-b">
       <Container>
-        <div className="relative flex h-20 items-center px-4 sm:px-6 lg:px-8">
+        <header className="relative flex items-center justify-between md:px-4">
           <Link href="/" className="ml-4 flex gap-x-2 text-xl font-bold lg:ml-0">
             STORE LOGO
           </Link>
           <MainNav data={categories} />
           <NavBarActions />
-        </div>
+        </header>
       </Container>
     </div>
   )

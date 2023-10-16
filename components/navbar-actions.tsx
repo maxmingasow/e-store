@@ -21,7 +21,7 @@ export default function NavBarActions() {
   if (!isMounted) return null
 
   return (
-    <div className="ml-auto flex items-center gap-x-4">
+    <div className="flex items-center gap-x-4">
       <Button
         onClick={() => router.push('/cart')}
         variant="ghost"

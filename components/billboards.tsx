@@ -15,7 +15,7 @@ type Props = {
 export default function Billboards({ items, categories }: Props) {
   return (
     <Carousel
-      autoplay={true}
+      autoplay={false}
       autoplayInterval={5000}
       wrapAround={true}
       speed={1000}
